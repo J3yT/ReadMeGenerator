@@ -80,7 +80,7 @@ ${description}
 ${installation}
 
 ## Usage
-${usage}
+${usage} Link to video of application: (https://drive.google.com/file/d/1BLnwWliZNm1KX9sgSNxyqYqGZHn_AbZ-/view)
  
 ## License
 License the application is covered under: ${license.toUpperCase()}
