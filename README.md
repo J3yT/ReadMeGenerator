@@ -1,9 +1,9 @@
-# d
+# Readme Generator
 
 [![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
 
 ## Description
-d
+This is the description
 
 ## Table of Contents
 
@@ -13,20 +13,20 @@ d
 - [License](#license)
 
 ## Installation
-d
+installation steps
 
 ## Usage
- Link to video of application: (https://drive.google.com/file/d/1BLnwWliZNm1KX9sgSNxyqYqGZHn_AbZ-/view)
+examples of use Link to video of application: (https://drive.google.com/file/d/1BLnwWliZNm1KX9sgSNxyqYqGZHn_AbZ-/view)
  
 ## License
 License the application is covered under: APACHE
 
 ## How to Contribute
-d
+How to contribute
 
 ## Tests
-d
+tests
  
 ## Questions
-Link to github profile: (https://github.com/d) <br>
-If you would like to reach out with any additional questions this is my email: d
+Link to github profile: (https://github.com/J3yT) <br>
+If you would like to reach out with any additional questions this is my email: example@example.com
