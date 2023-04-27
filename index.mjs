@@ -1,7 +1,7 @@
 import inquirer from "inquirer";
 import fs from "fs/promises";
 
-let { title, description, installation, usage, license, contributing, tests } = await inquirer.prompt([
+let { title, description, installation, usage, license, contributing, tests, profile, email } = await inquirer.prompt([
   
   {
     type: "input",
@@ -39,16 +39,33 @@ let { title, description, installation, usage, license, contributing, tests } = 
     name: "tests",
     message: "Write tests for your application and provide examples on how to run them here:",
   },
+  {
+    type: "input",
+    name: "profile",
+    message: "Enter your github username:",
+  },
+  {
+    type: "input",
+    name: "email",
+    message: "Enter your email:",
+  },
 ]);
 
 let readmeText = 
 
 `# ${title}
 
+${generateLicense(license)}
+
 ## Description
 ${description}
 
 ## Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Credits](#credits)
+- [License](#license)
 
 ## Installation
 ${installation}
@@ -57,16 +74,17 @@ ${installation}
 ${usage}
  
 ## License
-License the application is covered under: ${generateLicense(license)}
+License the application is covered under: ${license.toUpperCase()}
 
 ## How to Contribute
 ${contributing}
 
 ## Tests
 ${tests}
-
+ 
 ## Questions
-
+Link to github profile: (https://github.com/${profile})
+If you would like to reach out with any additional questions this is my email: ${email}
 `;
 
 fs.writeFile("README.md", readmeText);
