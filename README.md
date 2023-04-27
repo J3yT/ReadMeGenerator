@@ -1,9 +1,9 @@
-# Readme Generator
+# d
 
-[![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)
+[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
 
 ## Description
-this is the description
+d
 
 ## Table of Contents
 
@@ -13,20 +13,20 @@ this is the description
 - [License](#license)
 
 ## Installation
-installation steps
+d
 
 ## Usage
-examples of use
+d
  
 ## License
-License the application is covered under: BOOST
+License the application is covered under: APACHE
 
 ## How to Contribute
-ways to contribute
+d
 
 ## Tests
-tests
+d
  
 ## Questions
-This is the link to my github profile: https://github.com/J3yT
-If you would like to reach out with any additional questions this is my email: @exampleEmail@example.com
+Link to github profile: (https://github.com/d) <br>
+If you would like to reach out with any additional questions this is my email: d

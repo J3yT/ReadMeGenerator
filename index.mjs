@@ -1,8 +1,17 @@
 import inquirer from "inquirer";
 import fs from "fs/promises";
 
-let { title, description, installation, usage, license, contributing, tests, profile, email } = await inquirer.prompt([
-  
+let {
+  title,
+  description,
+  installation,
+  usage,
+  license,
+  contributing,
+  tests,
+  profile,
+  email,
+} = await inquirer.prompt([
   {
     type: "input",
     name: "title",
@@ -32,12 +41,14 @@ let { title, description, installation, usage, license, contributing, tests, pro
   {
     type: "input",
     name: "contributing",
-    message: "Include guidelines on how you would like other developers to contribute to your project:",
+    message:
+      "Include guidelines on how you would like other developers to contribute to your project:",
   },
   {
     type: "input",
     name: "tests",
-    message: "Write tests for your application and provide examples on how to run them here:",
+    message:
+      "Write tests for your application and provide examples on how to run them here:",
   },
   {
     type: "input",
@@ -51,9 +62,7 @@ let { title, description, installation, usage, license, contributing, tests, pro
   },
 ]);
 
-let readmeText = 
-
-`# ${title}
+let readmeText = `# ${title}
 
 ${generateLicense(license)}
 
@@ -83,19 +92,18 @@ ${contributing}
 ${tests}
  
 ## Questions
-Link to github profile: (https://github.com/${profile})
+Link to github profile: (https://github.com/${profile}) <br>
 If you would like to reach out with any additional questions this is my email: ${email}
 `;
 
 fs.writeFile("README.md", readmeText);
 
 function generateLicense(license) {
-
   if (license === "apache") {
     return "[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)";
   } else if (license === "Boost") {
     return "[![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)";
   } else {
-    return "[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)"
+    return "[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)";
   }
 }
